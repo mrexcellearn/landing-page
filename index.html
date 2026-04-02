@@ -9,6 +9,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1440714247025761');
+    fbq('track', 'PageView');
+    </script>
     <script>
         tailwind.config = {
             theme: {
@@ -375,8 +388,9 @@
 </head>
 
 <body class="bg-bgMain text-textDark pattern-bg">
-
-    <!-- HEADER -->
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1440714247025761&ev=PageView&noscript=1"
+    /></noscript>
     <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-border/50 transition-transform duration-300">
         <div class="max-w-md mx-auto px-4 py-4 flex flex-col items-center justify-center">
             <span class="font-display font-bold text-lg text-textDark flex items-center gap-2">
@@ -385,10 +399,8 @@
         </div>
     </header>
 
-    <!-- HERO SECTION -->
     <section class="hero-gradient pt-6 pb-10 px-4">
         <div class="max-w-md mx-auto">
-            <!-- Scarcity Badge -->
             <div class="flex justify-center mb-6 reveal">
                 <div class="inline-flex items-center gap-2 bg-white/90 px-4 py-2 rounded-full card-shadow">
                     <span class="w-2 h-2 bg-success rounded-full animate-pulse-soft"></span>
@@ -396,14 +408,12 @@
                 </div>
             </div>
 
-            <!-- Hero Image -->
             <div class="relative mb-6 reveal" style="animation-delay: 0.1s;">
                 <div class="absolute -inset-4 bg-primary/10 rounded-3xl blur-2xl"></div>
                 <img src="hero-image.png"
                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/FFF7ED/FF8C42?text=Chat+Your+Expenses';"
                     alt="Excellearn Wealth Tracker Interface"
                     class="relative rounded-2xl card-shadow w-full animate-float">
-                <!-- Floating Elements -->
                 <div class="absolute -right-2 top-4 bg-white px-3 py-2 rounded-lg card-shadow text-sm font-medium animate-pulse-soft">
                     <span class="text-success">+</span> Rp 150.000
                 </div>
@@ -412,7 +422,6 @@
                 </div>
             </div>
 
-            <!-- Hero Copy -->
             <div class="text-center reveal" style="animation-delay: 0.2s;">
                 <h1 class="font-display text-2xl sm:text-3xl font-bold leading-tight mb-4">
                     Catat Keuangan Cuma Modal Ngechat.
@@ -422,7 +431,6 @@
                     Lagi bingung ngatur keuangan? Bingung duit kemana aja? Tenang, sekarang catat pengeluaran semudah chat temen. Bisa voice input lagi!
                 </p>
 
-                <!-- CTA Button -->
                 <a href="#conversion" data-action="cta-click" class="btn-primary no-underline inline-flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 rounded-xl font-semibold text-white text-lg">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -434,7 +442,6 @@
         </div>
     </section>
 
-    <!-- PROBLEM SECTION -->
     <section class="py-12 px-4 bg-white">
         <div class="max-w-md mx-auto">
             <div class="reveal">
@@ -496,7 +503,6 @@
         </div>
     </section>
 
-    <!-- AGITATION SECTION -->
     <section class="py-12 px-4 bg-gradient-to-b from-bgMain to-orange-50">
         <div class="max-w-md mx-auto reveal">
             <div class="text-center mb-6">
@@ -530,7 +536,6 @@
         </div>
     </section>
 
-    <!-- SOLUTION SECTION -->
     <section class="py-12 px-4 bg-white">
         <div class="max-w-md mx-auto">
             <div class="text-center mb-8 reveal">
@@ -593,7 +598,6 @@
                 </div>
             </div>
 
-            <!-- App Preview Carousel -->
             <div class="mt-8 reveal" style="animation-delay: 0.5s;">
                 <div class="carousel-container card-shadow">
                     <div class="carousel-progress" id="carousel-progress"></div>
@@ -607,7 +611,6 @@
                     </button>
 
                     <div class="carousel-track" id="carousel-track">
-                        <!-- Slide 1 -->
                         <div class="carousel-slide">
                             <div class="slide-content p-2">
                                 <div class="relative w-full aspect-square flex items-center justify-center rounded-xl overflow-hidden bg-[#1C1917]">
@@ -616,7 +619,6 @@
                             </div>
                         </div>
 
-                        <!-- Slide 2 -->
                         <div class="carousel-slide">
                             <div class="slide-content p-2">
                                 <div class="relative w-full aspect-square flex items-center justify-center rounded-xl overflow-hidden bg-[#1C1917]">
@@ -625,7 +627,6 @@
                             </div>
                         </div>
 
-                        <!-- Slide 3 -->
                         <div class="carousel-slide">
                             <div class="slide-content p-2">
                                 <div class="relative w-full aspect-square flex items-center justify-center rounded-xl overflow-hidden bg-[#1C1917]">
@@ -634,7 +635,6 @@
                             </div>
                         </div>
 
-                        <!-- Slide 4 -->
                         <div class="carousel-slide">
                             <div class="slide-content p-2">
                                 <div class="relative w-full aspect-square flex items-center justify-center rounded-xl overflow-hidden bg-[#1C1917]">
@@ -644,7 +644,6 @@
                         </div>
                     </div>
 
-                    <!-- Carousel Dots -->
                     <div class="carousel-dots" id="carousel-dots">
                         <button class="carousel-dot active" data-slide="0" aria-label="Go to slide 1"></button>
                         <button class="carousel-dot" data-slide="1" aria-label="Go to slide 2"></button>
@@ -656,7 +655,6 @@
         </div>
     </section>
 
-    <!-- COMPARISON SECTION -->
     <section class="py-12 px-4 bg-bgMain">
         <div class="max-w-md mx-auto">
             <div class="text-center mb-8 reveal">
@@ -725,7 +723,6 @@
         </div>
     </section>
 
-    <!-- TESTIMONIAL SECTION -->
     <section class="py-12 px-4 bg-white overflow-hidden">
         <div class="max-w-md mx-auto">
             <div class="text-center mb-8 reveal">
@@ -736,7 +733,6 @@
             <div class="reveal">
                 <div class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 hide-scrollbar w-full" id="testi-track" style="scroll-behavior: smooth;">
                     
-                    <!-- Testi 1 -->
                     <div class="snap-center shrink-0 w-[85%]">
                         <div class="bg-white rounded-[20px] p-6 border border-borderLight card-shadow h-full flex flex-col">
                             <div class="flex gap-1 mb-4 text-[#FBBF24]">
@@ -757,7 +753,6 @@
                         </div>
                     </div>
 
-                    <!-- Testi 2 -->
                     <div class="snap-center shrink-0 w-[85%]">
                         <div class="bg-white rounded-[20px] p-6 border border-borderLight card-shadow h-full flex flex-col">
                             <div class="flex gap-1 mb-4 text-[#FBBF24]">
@@ -778,7 +773,6 @@
                         </div>
                     </div>
 
-                    <!-- Testi 3 -->
                     <div class="snap-center shrink-0 w-[85%]">
                         <div class="bg-white rounded-[20px] p-6 border border-borderLight card-shadow h-full flex flex-col">
                             <div class="flex gap-1 mb-4 text-[#FBBF24]">
@@ -800,7 +794,6 @@
                     </div>
                 </div>
 
-                <!-- Carousel Dots Testimoni -->
                 <div class="flex justify-center gap-2 mt-4" id="testi-dots">
                     <button class="w-2 h-2 rounded-full bg-primary transition-all duration-300"></button>
                     <button class="w-2 h-2 rounded-full bg-border transition-all duration-300"></button>
@@ -810,7 +803,6 @@
         </div>
     </section>
 
-    <!-- FAQ SECTION -->
     <section id="faq" class="py-12 px-4 bg-bgMain">
         <div class="max-w-md mx-auto">
             <div class="text-center mb-8 reveal">
@@ -898,7 +890,6 @@
         </div>
     </section>
 
-    <!-- TRUST ELEMENTS -->
     <section class="py-12 px-4 bg-white">
         <div class="max-w-md mx-auto reveal">
             <div class="text-center mb-8">
@@ -937,7 +928,6 @@
         </div>
     </section>
 
-    <!-- CONVERSION BLOCK -->
     <section id="conversion" class="py-12 px-4 bg-gradient-to-b from-white via-orange-50 to-orange-100">
         <div class="max-w-md mx-auto">
             <div class="text-center mb-6 reveal">
@@ -1031,7 +1021,6 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer class="py-8 px-4 bg-textDark">
         <div class="max-w-md mx-auto text-center">
             <p class="text-white/60 text-sm mb-4">Excellearn Wealth Tracker by Mrexcellearn</p>
@@ -1044,7 +1033,6 @@
         </div>
     </footer>
 
-    <!-- STICKY CTA MOBILE -->
     <div id="sticky-cta" class="fixed bottom-0 left-0 right-0 sticky-cta p-4 border-t border-border z-50 md:hidden transform translate-y-full transition-transform duration-300">
         <div class="max-w-md mx-auto">
             <a href="#conversion" data-action="cta-click" class="btn-primary no-underline inline-flex items-center justify-center gap-2 w-full py-3 rounded-xl font-semibold text-white">
@@ -1299,6 +1287,19 @@
             heroReveals.forEach((el, index) => {
                 el.style.animationDelay = `${index * 0.15}s`;
                 el.classList.add('active');
+            });
+
+            // PIXEL EVENT TRACKER FOR CTA
+            document.querySelectorAll('[data-action="cta-click"]').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    if (typeof fbq === 'function') {
+                        fbq('track', 'Lead', {
+                            content_name: 'Excellearn Wealth Tracker Purchase Initiation',
+                            value: 49999,
+                            currency: 'IDR'
+                        });
+                    }
+                });
             });
         });
 
